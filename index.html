@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Math Partner</title>
+        <link rel="stylesheet" href="text.css">
+        <script src="https://kit.fontawesome.com/eb339bb978.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    
+        <div class="container">
+            <!--create upper-container-->
+        <div class="upper-container">
+
+            <img class="img" src="https://www.shutterstock.com/image-vector/trophy-cup-award-vector-illustration-260nw-603371879.jpg" alt="" height="100px">
+            
+            <h1> Math Partner<h1>
+
+           <!--creat dom event on click historyButton()-->
+            <input type="button" id="historyBtn" value="History" onclick="historyButton()">
+            <!--creat dom event on click SavedButton()-->
+            <input type="button" id="savedBtn" value="SAVED SOLUTIONS" onclick="SavedButton()">
+        </div>
+
+        <!--creat empty div show more data here-->
+        <div class="historycon">
+            
+        </div>
+        <div class="subContainer">
+            <div class="middle-container">
+                <div class="box1">
+                    <label for="problemBar"><h2>Problem</h2></label>
+                    <input type="text" id="problemBar" placeholder="TYPE HERE......" >
+                </div>
+        
+                <div class="box2">
+                    <label for="categoryBar"><h2>select Category</h2></label>
+                    <select name="categoryBar" id="categoryBar">
+                        <option value="simplify">Simplify</option>
+                        <option value="integrate">Integrate</option>
+                    </select>
+                </div>
+        
+                <div class="box3">
+                    <button type="submit" id="searchBtn" onclick="SearchButton()"><i class="fa-solid fa-magnifying-glass fa-3x"></i></button>
+                </div>
+            </div>
+        
+            <!--create container input-box-->
+            <div class="container-input">
+                <div class="inputBox1"></div>
+                <div class="inputBox2"></div>
+
+                <!--create a delete Button-->
+                <!--create a events delbtn()-->
+                <button type="reset" id="deleteBtn" onclick="delBtn()"><i class="fa-solid fa-trash-can fa-3x"></i></button>
+            </div>
+            </div>  
+            </div>
+        
+            <script src="script.js"></script>
+        </body> 
+        </html>        
